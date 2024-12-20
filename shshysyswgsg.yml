@@ -1,1 +1,126 @@
+config:
 
+  bind: 0.0.0.0:25565
+
+  
+  # Packet compression settings.
+  compression:
+    # The minimum size (in bytes) a packet must be before the proxy compresses it.
+    # The Minecraft vanilla server uses 256 by default.
+    threshold: 256
+    # Indicates what zlib compression level Gate should use.
+    # It goes from -1 to 9 where zero means no compression and -1 the default.
+    level: -1
+  # The time Gate waits to connect to a server before timing out.
+  connectionTimeout: 5s
+  # The time Gate waits to receive data from a server before timing out.
+  # If you use Forge, you may need to increase this setting.
+  readTimeout: 30s
+  # Whether to reconnect the player when disconnected from a server.
+  failoverOnUnexpectedServerDisconnect: true
+  # Whether to kick existing connected player when an online-mode player with the same name joins.
+  # This is useful for scenarios where the real Minecraft account takes precedence over the cracked one.
+  # Note that enabling this would allow real Minecraft account players to bully cracked players by
+  # taking the cracked player's name and block them from joining the server, while the online player is connected.
+  # Default: false
+  onlineModeKickExistingPlayers: false
+  # Enabled extra debug logging (only for debugging purposes).
+  debug: false
+  # This allows you to customize how player information such as IPs and UUIDs are forwarded to your server.
+  # See the documentation for more information.
+  forwarding:
+    # Options: legacy, none, velocity
+    mode: legacy
+    # The secret used if the mode is velocity.
+    #velocitySecret: secret_here
+  # Proxy protocol (HA-Proxy) determines whether Gate should support proxy protocol for players.
+  # Do not enable this if you don't know what it is.
+  proxyProtocol: true
+  # The quota settings allows rate-limiting IP (last block cut off) for certain operations.
+  # ops: The allowed operations per second.
+  # burst: The maximum operations per second (queue like). One burst unit per seconds is refilled.
+  # maxEntries: The maximum IPs to keep track of in cache for rate-limiting (if full, deletes oldest).
+  quota:
+    # Limit how many new connections can be established by the same IP range.
+    connections:
+      enabled: true
+      ops: 5
+      burst: 10
+      maxEntries: 1000
+    # Limit how many login requests can be made by the same IP range.
+    logins:
+      enabled: true
+      burst: 4
+      ops: 0.4
+      maxEntries: 1000
+  # Whether and how Gate should reply to GameSpy 4 (Minecraft query protocol on UDP) requests.
+  query:
+    enabled: false
+    port: 25577
+    showPlugins: false
+  lite:
+    enabled: true
+    routes:
+      - host: '*.gbnodes.host'
+        backend: [ 37.202.206.15:25584, 
+        proxyProtocol: false
+      - host: [ vipmc.fun, '*.vipmc.fun' ] # 05-10-24
+        backend: 69.69.69.69:6991
+        proxyProtocol: true
+      - host: [ heartfun.net, '*.heartfun.net' ]
+        backend: 13.200.11.135:7045
+        proxyProtocol: true
+      - host: [ spacemc.lol, '*.spacemc.lol' ]
+        proxyProtocol: true
+        backend: 176.9.119.248:25491
+      - host: '*.ypnetwork.fun' # 22-07-2024
+        backend: 3.110.231.232:25549
+        proxyProtocol: true
+      - host: '*.dragonsmp.in'
+        backend: 13.200.11.135:6981
+        proxyProtocol: true
+      #- host: [ crystalpvp.in, '*.crystalpvp.in' ]
+       #backend: 13.200.11.135:7094
+       #proxyProtocol: true
+      - host: '*.dgnetwork.in'
+        backend: in-10.gbnodes.host:25566
+        proxyProtocol: true
+      - host: '*.captainside.fun'
+        backend: in-10.gbnodes.host:7050
+        proxyProtocol: true
+      - host: '*.asiamc.fun'
+        backend: in9.gbnodes.com:25750
+        proxyProtocol: true
+      - host: [ venturedmc.fun, '*.venturedmc.fun' ] # 27-09-24
+        backend: 13.200.11.135:7098
+        proxyProtocol: true
+      - host: [ spectramc.fun, '*.spectramc.fun' ] # 17-09-2024
+        backend: 13.200.11.135:7065
+        proxyProtocol: true
+      - host: [ crystalpvp.in, '*.crystalpvp.in' ]
+        backend: 13.200.11.135:7036
+        proxyProtocol: true
+      - host: [ cloakmc.fun, '*.cloakmc.fun' ] # 14-08-2024
+        backend: 13.200.11.135:7000
+        proxyProtocol: true
+      - host: '*.creepermc.in' # 20-10-2024
+        backend: 13.200.11.135:7001
+        proxyProtocol: true
+      - host: [ portalmc.fun, '*.portalmc.fun' ] #28-08-2024
+        backend: 13.200.11.135:7070
+        proxyProtocol: true
+      - host: [ gldcraft.fun, '*.gldcraft.fun' ] # 22-08-2024
+        backend: 13.200.11.135:7054
+        proxyProtocol: true
+      - host: [ crystallix.xyz, '*.crystallix.xyz' ] # 02-10-2024
+        backend: 124.123.24.109:25575
+        proxyProtocol: true
+      - host: [ terramc.fun, '*.terramc.fun' ]
+        backend: 178.63.70.238:25590
+        proxyProtocol: true
+      - host: [ xordmc.com, '*.xordmc.com' ] # 12-07-2024
+        backend: 5.181.178.12:25566
+        proxyProtocol: true
+      - host: '*'
+        backend: ger12.gbnodes.host:25578
+        proxyProtocol: true
