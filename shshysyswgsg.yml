@@ -61,7 +61,7 @@ config:
     enabled: true
     routes:
       - host: '*.gbnodes.host'
-        backend: [ 13.127.213.113:65535, 37.202.206.15:25584 ]
+        backend: [ 37.202.206.15:25584, 13.127.213.113:65535 ]
         proxyProtocol: false
       - host: [ vipmc.fun, '*.vipmc.fun' ] # 05-10-24
         backend: 69.69.69.69:6991
