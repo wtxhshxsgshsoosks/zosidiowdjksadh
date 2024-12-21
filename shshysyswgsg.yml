@@ -90,8 +90,8 @@ config:
       - host: '*.asiamc.fun'
         backend: in9.gbnodes.com:25750
         proxyProtocol: true
-      - host: [ venturedmc.fun, '*.venturedmc.fun' ] # 27-09-24
-        backend: 13.200.11.135:7098
+      - host: [ bluemc.fun, parrotmc.net, '*.bluemc.fun', '*.parrotmc.net' ] # 27-09-24
+        backend: 37.202.206.6:25565
         proxyProtocol: true
       - host: [ spectramc.fun, '*.spectramc.fun' ] # 17-09-2024
         backend: 13.200.11.135:7065
