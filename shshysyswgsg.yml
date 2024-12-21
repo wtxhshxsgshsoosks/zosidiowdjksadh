@@ -71,7 +71,7 @@ config:
         backend: 13.200.11.135:7045
         proxyProtocol: true
       - host: [ spacemc.lol, '*.spacemc.lol' ]
-        backend: ger12.gbnodes.host:25491
+        backend: 176.9.119.244:25491
         proxyProtocol: true
       - host: '*.ypnetwork.fun' # 22-07-2024
         backend: 3.110.231.232:25549
