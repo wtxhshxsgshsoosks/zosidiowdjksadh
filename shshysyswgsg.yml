@@ -11,7 +11,7 @@ config:
     # It goes from -1 to 9 where zero means no compression and -1 the default.
     level: -1
   # The time Gate waits to connect to a server before timing out.
-  connectionTimeout: 15s
+  connectionTimeout: 20s
   # The time Gate waits to receive data from a server before timing out.
   # If you use Forge, you may need to increase this setting.
   readTimeout: 45s
