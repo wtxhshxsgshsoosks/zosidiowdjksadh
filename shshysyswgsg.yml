@@ -63,9 +63,6 @@ config:
       - host: '*.gbnodes.host'
         backend: [ 37.202.206.15:25584, 13.127.213.113:65535 ]
         proxyProtocol: false
-      - host: [ vipmc.fun, '*.vipmc.fun' ] # 05-10-24
-        backend: 69.69.69.69:6991
-        proxyProtocol: true
       - host: [ heartfun.net, '*.heartfun.net' ]
         backend: 13.200.11.135:7045
         proxyProtocol: true
