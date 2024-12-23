@@ -69,6 +69,15 @@ config:
       - host: [ spacemc.lol, '*.spacemc.lol' ]
         backend: 176.9.119.244:25491
         proxyProtocol: true
+      - host: [ pvphub.in, '*.pvphub.in' ]
+        backend: 176.9.119.244:25491
+        proxyProtocol: true
+      - host: [ sharkmc.fun, '*.sharkmc.fun' ]
+        backend: 176.9.119.244:25491
+        proxyProtocol: true
+      - host: [ mcpractice.in, '*.mcpractice.in' ]
+        backend: 176.9.119.244:25491
+        proxyProtocol: true
       - host: '*.ypnetwork.fun' # 22-07-2024
         backend: 3.110.231.232:25549
         proxyProtocol: true
@@ -91,7 +100,7 @@ config:
         backend: 37.202.206.6:25565
         proxyProtocol: true
       - host: [ spectramc.fun, '*.spectramc.fun' ] # 17-09-2024
-        backend: 13.200.11.135:7065
+        backend: 37.202.206.20:9065
         proxyProtocol: true
       - host: [ crystalpvp.in, '*.crystalpvp.in' ]
         backend: 13.200.11.135:7036
