@@ -100,7 +100,7 @@ config:
         backend: 37.202.206.6:25565
         proxyProtocol: true
       - host: [ spectramc.fun, '*.spectramc.fun' ] # 17-09-2024
-        backend: 37.202.206.20:9065
+        backend: 172.18.0.1:9065
         proxyProtocol: true
       - host: [ crystalpvp.in, '*.crystalpvp.in' ]
         backend: 13.200.11.135:7036
