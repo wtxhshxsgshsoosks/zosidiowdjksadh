@@ -70,13 +70,13 @@ config:
         backend: 176.9.119.244:25491
         proxyProtocol: true
       - host: [ pvphub.in, '*.pvphub.in' ]
-        backend: 176.9.119.244:25491
+        backend: 13.127.213.113:2082
         proxyProtocol: true
       - host: [ sharkmc.fun, '*.sharkmc.fun' ]
-        backend: 176.9.119.244:25491
+        backend: 176.9.119.248:25629
         proxyProtocol: true
-      - host: [ mcpractice.in, '*.mcpractice.in' ]
-        backend: 176.9.119.244:25491
+      - host: [ mcpractice.fun, '*.mcpractice.fun' ]
+        backend: 13.235.89.25:25716
         proxyProtocol: true
       - host: '*.ypnetwork.fun' # 22-07-2024
         backend: 3.110.231.232:25549
