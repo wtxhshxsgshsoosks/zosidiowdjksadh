@@ -97,7 +97,7 @@ config:
         backend: in9.gbnodes.com:25750
         proxyProtocol: true
       - host: [ bluemc.fun, parrotmc.net, '*.bluemc.fun', '*.parrotmc.net' ] # 27-09-24
-        backend: 37.202.206.6:25565
+        backend: 176.9.119.248:9999
         proxyProtocol: true
       - host: [ spectramc.fun, '*.spectramc.fun' ] # 17-09-2024
         backend: 172.18.0.1:9065
