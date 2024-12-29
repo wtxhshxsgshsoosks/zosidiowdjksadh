@@ -67,7 +67,7 @@ config:
         backend: 13.200.11.135:7045
         proxyProtocol: true
       - host: [ spacemc.lol, '*.spacemc.lol' ]
-        backend: 176.9.119.244:25491
+        backend: 94.130.207.184:25491
         proxyProtocol: true
       - host: [ pvphub.in, '*.pvphub.in' ]
         backend: 13.127.213.113:2082
