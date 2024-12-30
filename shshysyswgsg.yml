@@ -123,8 +123,8 @@ config:
       - host: [ terramc.fun, '*.terramc.fun' ]
         backend: 178.63.70.238:25590
         proxyProtocol: true
-      - host: [ xordmc.com, '*.xordmc.com' ] # 12-07-2024
-        backend: 5.181.178.12:25566
+      - host: [ sandmc.fun, '*.sandmc.fun' ] # 12-07-2024
+        backend: 13.200.11.135:7047
         proxyProtocol: true
       - host: '*'
         backend: ger12.gbnodes.host:25578
