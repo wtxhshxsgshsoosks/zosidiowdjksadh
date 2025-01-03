@@ -114,8 +114,8 @@ config:
       - host: [ portalmc.fun, '*.portalmc.fun' ] #28-08-2024
         backend: 13.200.11.135:7070
         proxyProtocol: true
-      - host: [ gldcraft.fun, '*.gldcraft.fun' ] # 22-08-2024
-        backend: 13.200.11.135:7054
+      - host: [ extremenet.live, '*.extremenet.live' ] # 22-08-2024
+        backend: 13.200.11.135:25672
         proxyProtocol: true
       - host: [ crystallix.xyz, '*.crystallix.xyz' ] # 02-10-2024
         backend: 124.123.24.109:25575
