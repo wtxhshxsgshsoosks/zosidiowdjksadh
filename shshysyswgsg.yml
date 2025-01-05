@@ -75,6 +75,9 @@ config:
       - host: [ sharkmc.fun, '*.sharkmc.fun' ]
         backend: 176.9.119.248:25629
         proxyProtocol: true
+      - host: [ wondercraft.in, '*.wondercraft.in' ]
+        backend: 180.188.230.254:25565
+        proxyProtocol: true
       - host: [ mcpractice.fun, '*.mcpractice.fun' ]
         backend: 13.235.89.25:25716
         proxyProtocol: true
