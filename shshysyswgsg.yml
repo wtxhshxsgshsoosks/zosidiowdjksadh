@@ -63,8 +63,8 @@ config:
       - host: '*.gbnodes.host'
         backend: [ 37.202.206.15:25584, 13.127.213.113:65535 ]
         proxyProtocol: false
-      - host: [ heartfun.net, '*.heartfun.net' ]
-        backend: 13.200.11.135:7045
+      - host: [ universalmc.fun, '*.universalmc.fun' ]
+        backend: 37.202.206.8:25600
         proxyProtocol: true
       - host: [ spacemc.lol, '*.spacemc.lol' ]
         backend: 94.130.207.184:25491
