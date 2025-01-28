@@ -65,6 +65,7 @@ config:
         proxyProtocol: false
       - host: [ universalmc.fun, '*.universalmc.fun' ]
         backend: 172.18.0.1:9876
+        cachePingTTL: -1s
         proxyProtocol: true
       - host: [ spacemc.lol, '*.spacemc.lol' ]
         backend: 94.130.207.184:25491
