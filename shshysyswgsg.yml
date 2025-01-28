@@ -64,7 +64,7 @@ config:
         backend: [ 37.202.206.15:25584, 13.127.213.113:65535 ]
         proxyProtocol: false
       - host: [ universalmc.fun, '*.universalmc.fun' ]
-        backend: 37.202.206.8:25600
+        backend: 172.18.0.1:9876
         proxyProtocol: true
       - host: [ spacemc.lol, '*.spacemc.lol' ]
         backend: 94.130.207.184:25491
